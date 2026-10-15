@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#78350f">
+    <meta name="description" content="Piscok Delight menyediakan piscok Cokelat, Matcha, dan Taro yang lezat dengan harga bersahabat.">
+
+    <title>Piscok Delight | Camilan Manis Favoritmu</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header" id="beranda">
+    <a href="#beranda" class="brand">
+        <img
+            src="./assets/logo.png"
+            alt="Logo Piscok Delight"
+            onerror="this.style.display='none'"
+        >
+
+        <div>
+            <h1>Piscok <span>Delight</span></h1>
+            <p>Manis, renyah, bikin nagih!</p>
+        </div>
+    </a>
+
+    <nav class="navbar" id="navbar">
+        <a href="#beranda">Beranda</a>
+        <a href="#produk">Menu</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#operasional">Jam Buka</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <a href="#keranjang" class="header-cart">
+        🛒 <span>Keranjang</span>
+        <b id="jumlah-keranjang">0</b>
+    </a>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <span class="badge">🍌 Camilan Favoritmu</span>
+
+        <h2>
+            Satu Gigitan,<br>
+            <span>Sejuta Kenikmatan!</span>
+        </h2>
+
+        <p>
+            Nikmati perpaduan pisang pilihan, kulit renyah,
+            dan isian lezat yang bikin harimu makin menyenangkan.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#produk" class="btn-primary">
+                Pesan Sekarang →
+            </a>
+
+            <a href="#tentang" class="btn-secondary">
+                Tentang Kami
+            </a>
+        </div>
+
+        <div class="hero-info">
+            <div>
+                <strong>3</strong>
+                <span>Pilihan Rasa</span>
+            </div>
+
+            <div>
+                <strong>Lezat</strong>
+                <span>Bikin Bahagia</span>
+            </div>
+
+            <div>
+                <strong>Praktis</strong>
+                <span>Pesan Online</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-circle">
+            <img
+                src="./assets/produk1.png"
+                alt="Piscok Cokelat"
+                onerror="this.style.display='none'"
+            >
+        </div>
+
+        <div class="floating-label label-top">
+            🍫 Manis & Lezat
+        </div>
+
+        <div class="floating-label label-bottom">
+            ❤️ Dibuat untukmu
+        </div>
+    </div>
+</section>
+
+
+<main>
+
+<!-- PRODUK -->
+<section class="produk-section section" id="produk">
+    <div class="section-heading">
+        <span class="section-label">MENU SPESIAL</span>
+        <h2>Pilih Rasa Favoritmu</h2>
+        <p>Temukan camilan yang cocok untuk menemani harimu.</p>
+    </div>
+
+    <div class="produk-container">
+
+        <!-- COKELAT -->
+        <article class="produk">
+            <div class="produk-image">
+                <span class="produk-tag">⭐ Favorit</span>
+
+                <img
+                    src="./assets/produk1.png"
+                    alt="Piscok Cokelat"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                >
+            </div>
+
+            <div class="produk-info">
+                <span class="rasa">🍫 Cokelat</span>
+                <h3>Pisang Cokelat</h3>
+
+                <p class="produk-deskripsi">
+                    Rasa cokelat manis untuk menemani waktu santai.
+                </p>
+
+                <div class="produk-bottom">
+                    <strong>Rp5.000</strong>
+
+                    <button
+                        type="button"
+                        class="btn-tambah"
+                        data-id="1"
+                    >
+                        + Tambah
+                    </button>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- MATCHA -->
+        <article class="produk">
+            <div class="produk-image">
+                <span class="produk-tag tag-oreo">🍵 Spesial</span>
+
+                <img
+                    src="./assets/produk2.png"
+                    alt="Piscok Matcha"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                >
+            </div>
+
+            <div class="produk-info">
+                <span class="rasa">🍵 Matcha</span>
+                <h3>Pisang Matcha</h3>
+
+                <p class="produk-deskripsi">
+                    Pilihan rasa matcha dengan sensasi yang unik.
+                </p>
+
+                <div class="produk-bottom">
+                    <strong>Rp10.000</strong>
+
+                    <button
+                        type="button"
+                        class="btn-tambah"
+                        data-id="2"
+                    >
+                        + Tambah
+                    </button>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- TARO -->
+        <article class="produk">
+            <div class="produk-image">
+                <span class="produk-tag tag-keju">💜 Istimewa</span>
+
+                <img
+                    src="./assets/produk3.png"
+                    alt="Piscok Taro"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                >
+            </div>
+
+            <div class="produk-info">
+                <span class="rasa">💜 Taro</span>
+                <h3>Pisang Taro</h3>
+
+                <p class="produk-deskripsi">
+                    Rasa taro yang istimewa untuk pilihan berbeda.
+                </p>
+
+                <div class="produk-bottom">
+                    <strong>Rp15.000</strong>
+
+                    <button
+                        type="button"
+                        class="btn-tambah"
+                        data-id="3"
+                    >
+                        + Tambah
+                    </button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- KEUNGGULAN -->
+<section class="keunggulan-section">
+    <div class="section-heading">
+        <span class="section-label">KENAPA PILIH KAMI?</span>
+        <h2>Camilan untuk Setiap Momen</h2>
+    </div>
+
+    <div class="keunggulan-container">
+        <div class="keunggulan-card">
+            <span>🍌</span>
+            <h3>Pilihan Rasa</h3>
+            <p>Tiga pilihan rasa yang bisa kamu nikmati.</p>
+        </div>
+
+        <div class="keunggulan-card">
+            <span>💰</span>
+            <h3>Harga Bersahabat</h3>
+            <p>Pilihan camilan dengan harga yang terjangkau.</p>
+        </div>
+
+        <div class="keunggulan-card">
+            <span>📱</span>
+            <h3>Pesan Praktis</h3>
+            <p>Pesan dengan mudah melalui WhatsApp.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- KERANJANG -->
+<section class="keranjang-section section" id="keranjang">
+    <div class="section-heading">
+        <span class="section-label">PESANAN KAMU</span>
+        <h2>🛒 Keranjang Belanja</h2>
+        <p>Periksa pilihanmu sebelum melakukan pemesanan.</p>
+    </div>
+
+    <div class="keranjang-box">
+        <div class="keranjang-header">
+            <h3>Daftar Pesanan</h3>
+
+            <button
+                type="button"
+                id="hapus"
+                class="btn-hapus"
+            >
+                Hapus Semua
+            </button>
+        </div>
+
+        <div id="daftar-keranjang" aria-live="polite">
+            <div class="keranjang-kosong">
+                <span>🛍️</span>
+                <h3>Keranjang masih kosong</h3>
+                <p>Yuk, pilih piscok favoritmu!</p>
+                <a href="#produk" class="btn-primary">Pilih Produk</a>
+            </div>
+        </div>
+
+        <div class="ringkasan">
+            <div class="ringkasan-baris">
+                <span>Jumlah produk</span>
+                <strong id="jumlah-item">0 produk</strong>
+            </div>
+
+            <div class="ringkasan-baris total-baris">
+                <span>Total pembayaran</span>
+                <strong id="total">Rp0</strong>
+            </div>
+
+            <button
+                type="button"
+                id="checkout"
+                class="btn-checkout"
+            >
+                Pesan via WhatsApp <span>→</span>
+            </button>
+
+            <p class="checkout-note">
+                📱 Rincian pesanan akan dikirim melalui WhatsApp.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- TENTANG KAMI -->
+<section class="tentang-section section" id="tentang">
+    <div class="tentang-box">
+        <div class="tentang-visual">
+            <span>🍌</span>
+            <span>🍫</span>
+            <span>💜</span>
+        </div>
+
+        <div class="tentang-content">
+            <span class="section-label">TENTANG KAMI</span>
+            <h2>Kenalan dengan Piscok Delight!</h2>
+
+            <p>
+                Piscok Delight hadir untuk memberikan pilihan
+                camilan pisang cokelat dengan berbagai rasa
+                yang menarik dan harga bersahabat.
+            </p>
+
+            <p>
+                Kami menyediakan Piscok Cokelat, Matcha,
+                dan Taro untuk menemani waktu santai,
+                belajar, berkumpul bersama teman, atau
+                menikmati waktu bersama keluarga.
+            </p>
+
+            <a href="#produk" class="btn-primary">
+                Jelajahi Menu →
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- JAM OPERASIONAL -->
+<section class="operasional-section section" id="operasional">
+    <div class="section-heading">
+        <span class="section-label">WAKTU PELAYANAN</span>
+        <h2>Jam Operasional</h2>
+        <p>Perhatikan jadwal berikut sebelum memesan.</p>
+    </div>
+
+    <div class="operasional-box">
+        <div class="operasional-icon">🕒</div>
+
+        <h3>Jam Buka Piscok Delight</h3>
+
+        <div class="jam-list">
+            <div class="jam-item">
+                <span>Senin – Jumat</span>
+                <strong>08.00 – 17.00 WIB</strong>
+            </div>
+
+            <div class="jam-item">
+                <span>Sabtu</span>
+                <strong>08.00 – 15.00 WIB</strong>
+            </div>
+
+            <div class="jam-item">
+                <span>Minggu</span>
+                <strong>Tutup</strong>
+            </div>
+        </div>
+
+        <p class="jam-catatan">
+            💬 Ingin memastikan ketersediaan pesanan?
+            Hubungi kami melalui WhatsApp.
+        </p>
+    </div>
+</section>
+
+
+<!-- KONTAK -->
+<section class="kontak-section section" id="kontak">
+    <div class="kontak-box">
+        <div class="kontak-content">
+            <span class="section-label">HUBUNGI KAMI</span>
+            <h2>Siap Menikmati Piscok?</h2>
+
+            <p>
+                Ada pertanyaan atau ingin melakukan pemesanan?
+                Hubungi Piscok Delight melalui kontak berikut.
+            </p>
+
+            <div class="kontak-detail">
+                <div class="kontak-item">
+                    <span>📞</span>
+                    <div>
+                        <small>WhatsApp</small>
+                        <a href="https://wa.me/6285270051074"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            085270051074
+                        </a>
+                    </div>
+                </div>
+
+                <div class="kontak-item">
+                    <span>✉️</span>
+                    <div>
+                        <small>Email</small>
+                        <a href="mailto:makansapiikanemas@gmail.com">
+                            makansapiikanemas@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="kontak-emoji">
+            💌
+            <p>Kami siap menerima pesananmu!</p>
+
+            <a
+                href="https://wa.me/6285270051074"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-whatsapp"
+            >
+                Chat WhatsApp ↗
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <a href="#beranda" class="footer-brand">
+        Piscok <span>Delight</span> 🍌
+    </a>
+
+    <p>Manis, renyah, harga bersahabat!</p>
+
+    <div class="footer-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#produk">Menu</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </div>
+
+    <p class="copyright">
+        &copy; 2026 Piscok Delight. Terima kasih sudah berbelanja!
+    </p>
+</footer>
+
+
+<!-- NOTIFIKASI -->
+<div
+    id="notifikasi"
+    class="notifikasi"
+    role="status"
+    aria-live="polite"
+></div>
+
+</body>
+</html>
